@@ -1,10 +1,10 @@
 # There are some errors in this program, make it error free and run them.
 
-numbers = [1,2,3,4]
+numbers = [1,2,3,4,5]
 
 puts numbers.first?
 
-a = .5
+a = 5
 b = 1
 
 c = a + b

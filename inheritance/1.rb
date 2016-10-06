@@ -7,7 +7,7 @@
 # Fix the below code such that .
 # 1. When asked for firstName it should give their son's name.
 # 2. When asked for secondName it should only give the mothers name.
-# 3. when asked for lastName it should only give the mothers name.
+# 3. when asked for lastName it should only give the fathers name.
 # 4. when asked for fullName it should give 'Bruce Martha Thomas'.
 
 

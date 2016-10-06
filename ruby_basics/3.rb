@@ -14,11 +14,26 @@ class Lottery
   end
 end
 
-@gifts ={
-	key, value,
-	key,value
+	@gifts = { "Wildcraft" => 01
+			"Oldnavy" => 02
+			"wrangler" => 03
+			"lives" => 04
+			"Apple" => 05
+			"HTC" => 06
+			"Gateway" => 07
+			"Windows" => 08
+			"Wildcraft" => 01
 }
 
-number = 'Inut From the user'
+number = 'Input From the user'
 prize = Lottery.new(number)
 puts prize
+
+gifts.each do|name,grade|
+  puts "#{name}: #{gifts}"
+end
+
+
+
+           
+

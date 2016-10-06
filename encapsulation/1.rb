@@ -20,7 +20,7 @@
 	# client should not be able to call the secureChat 
 
 class Message
-	def initialize
+	def sendPersonalMEssage
 		puts "This is a Messaging app"
 	end
 
