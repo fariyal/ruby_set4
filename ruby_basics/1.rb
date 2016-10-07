@@ -3,21 +3,40 @@
 # Print the present time using ruby.
 
 class Fib
-	def fibonacci( n )
-    [ n ] if ( 0..7 ).include? n
-    ( fibonacci( n - 7 ) + fibonacci( n - 2 ) ) if n > 7
-end
- 
-puts fibonacci( 5
-end	
-
-class div
-	def is_divisible_by_five?(n)
-    n % 5 == 0
+	def initialize
+		puts "fibonacci value til 7"
 	end
+	def fibo(n)
+    if n < 2
+        n
+    else
+        fibo(n-1) + fibo(n-2)
+	end
+    end
+	
+	
 end
-time1 = Time.new
-puts "Current Time : " + time1.inspect
-# Time.now is a synonym:
-time2 = Time.now
-puts "Current Time : " + time2.inspect
+class ChkDivis
+	def initialize
+		# puts "enter number to chek divisablity"
+		# @a=gets
+	end
+	def check(a)
+		@a=a.to_i
+		if @a % 5 == 0
+			puts "is divisible by 5"
+		else
+			puts "not divisible by 5 "
+	end
+	end
+	
+end
+
+f=Fib.new
+puts f.fibo(7)
+puts "current time: "
+puts Time.now
+puts "Enter number to chek divisiblity by 5 "
+a=gets
+c=ChkDivis.new
+c.check(a)

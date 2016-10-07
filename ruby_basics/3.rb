@@ -7,33 +7,50 @@
 class Lottery
 
   def initialize
-  end
+  	# @num=num
+ #  	gifts =Hash{
+	# "1"=>"gift 1",
+	# "2"=>"gift2",
+	# "3"=>"gift 3",
+	# "4"=>"gift 4",
+	# "5"=>"gift 5",
+	# "6"=>"gift 6",
+	# "7"=>"gift 7",
+	# "8"=>"gift 8",
+	# "9"=>"gift 9",
+	# "10"=>"gift 10"
+	# }
 
-  def method_name
-    
+
+  
+  	# puts "you	r gift: "
+    # gifts.value '3'
+gifts = {1 => "Ipone 5s 1",
+			2 => "Levis 2",
+			3 => "Okley Glasses  3",
+			4 => " Go-pro cam 4",
+			5 => "Old Navy5",
+			6 => " Fossil Watch 6",
+			7 => "Gateaway 7",
+			8 => "levis 8",
+			9 => "Wildcraft 9",
+			10 => "Fastrack 10",}
+			puts"Enter a number in 1 - 10 to get your gift"
+n=gets.to_i
+if !(n<0&& n>10)
+puts "#{gifts[n]}"
+else
+	puts "wrong no"
+# puts 
+end
+
   end
 end
 
-	@gifts = { "Wildcraft" => 01
-			"Oldnavy" => 02
-			"wrangler" => 03
-			"lives" => 04
-			"Apple" => 05
-			"HTC" => 06
-			"Gateway" => 07
-			"Windows" => 08
-			"Wildcraft" => 01
-}
 
-number = 'Input From the user'
-prize = Lottery.new(number)
-puts prize
-
-gifts.each do|name,grade|
-  puts "#{name}: #{gifts}"
-end
-
-
+# number = gets
+prize = Lottery.new
+# puts prize.choose
 
            
 
